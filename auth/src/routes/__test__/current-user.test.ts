@@ -19,7 +19,7 @@ it('response with current user details', async () => {
     .get('/api/users/currentuser')
     .set('Cookie', cookie)
     .send({})
-    .expect(400)
+    .expect(200)
 
   console.log(response.body)
 })
